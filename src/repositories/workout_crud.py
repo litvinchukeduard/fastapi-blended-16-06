@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 
 from src.models import Workout
-from src.schemas import WorkoutCreate, WorkoutRetrieve
+from src.schemas import WorkoutCreate
 
 
 def get_workout(db: Session, workout_id: int):

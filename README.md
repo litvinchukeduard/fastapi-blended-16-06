@@ -3,6 +3,8 @@
 
 When a user stops workout before the end time, we calculate calories burned
 
+When workout is received, total calories and total time is computed
+
 User (id, name, birhtday)
 
 Workout (id, name, description)

@@ -20,6 +20,10 @@ class Workout(Base):
     name = Column(String, nullable=False)
     description = Column(String, nullable=False)
 
+    exercises = relationship('Exercise', secondary='workout_exercise')
+
+
+# __dict__ {'id': 2, 'name': 'sttring', 'duration': time(...), ...}
 class Exercise(Base):
     __tablename__ = "exercise"
 
