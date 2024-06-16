@@ -25,4 +25,12 @@ workout_exercise(workout_id, exercise_id, number)
 
 - POST /api/workouts/start
 
+`/api/workouts/{id}/start`
+
 - POST /api/workouts/end
+
+`/api/user_workouts/{id}/end`
+
+User_Workout(user_id, workout_id, start_time, end_time: None)
+
+https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/#__tabbed_1_1

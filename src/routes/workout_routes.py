@@ -18,7 +18,7 @@ async def read_workouts(db: Session = Depends(get_db)):
     return workout_crud.get_workouts(db)
 
 @workout_router.get("/{id}")
-async def read_workouts(id: int, db: Session = Depends(get_db)):
+async def read_workout_by_id(id: int, db: Session = Depends(get_db)):
     workout_db = workout_crud.get_workout(db, id)
     workout_retrieve = WorkoutRetrieve(**workout_db.__dict__)
 

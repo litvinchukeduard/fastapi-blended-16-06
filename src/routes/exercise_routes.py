@@ -6,7 +6,7 @@ from src.repositories import exercise_crud
 
 from src.schemas import ExerciseCreate, ExerciseRetrieve
 
-exercise_router = APIRouter(prefix="/api/exercises", tags=['workouts'])
+exercise_router = APIRouter(prefix="/api/exercises", tags=['exercise'])
 
 # - GET /api/workouts Returns all workouts in the system
 

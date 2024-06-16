@@ -39,3 +39,11 @@ class Workout_exercise(Base):
     workout_id = Column(Integer, ForeignKey('workout.id'))
     exercise_id = Column(Integer, ForeignKey('exercise.id'))
     number = Column(Integer)
+
+
+class User_workout(Base):
+    __tablename__ = 'user_workout'
+
+    id = Column(Integer, primary_key=True)
+    user_id = Column(Integer, ForeignKey('users.id'))
+    workout_id = Column(Integer, ForeignKey('workout.id'))

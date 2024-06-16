@@ -1,4 +1,4 @@
-from datetime import time
+from datetime import time, date
 from pydantic import BaseModel
 
 
@@ -30,6 +30,22 @@ class ExerciseCreate(ExerciseBase):
 
 
 class ExerciseRetrieve(ExerciseBase):
+    id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    name: str
+    birthday: date
+
+
+class UserCreate(UserBase):
+    pass
+
+
+class UserRetrieve(UserBase):
     id: int
 
     class Config:
